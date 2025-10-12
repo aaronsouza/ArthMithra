@@ -23,5 +23,53 @@ SmartLoan360X is an agentic AI system that combines financial intelligence, emot
   The AI dynamically shifts its tone and personality (e.g., Friendly Advisor, Financial Guru, Empathetic Listener) based on the customer's needs and context.
 
 - **🧑‍💻 Vision-Based KYC & OCR Agent:**  
-  Integrated Computer Vision agent extracts and ve
+  Integrated Computer Vision agent extracts and verifies customer details from uploaded ID documents (Aadhar, PAN), reducing fraud and streamlining onboarding.
+
+- **💬 Real-Time Market Intelligence:**  
+  An agent monitors financial news and RBI rate changes (via mock APIs) to provide timely, context-aware offers and advice.
+
+- **💡 Autonomous Self-Learning Loop:**  
+  The system self-evaluates conversations to identify drop-off points, missed opportunities, and confusing dialogue, autonomously refining its prompts and strategies weekly.
+
+---
+
+## 🧱 System Architecture
+The system is built on a multi-agent architecture where a **Master Agent** orchestrates a network of specialized worker agents. This modular design allows for complex, autonomous workflows. Orchestration can be managed using frameworks like **LangGraph, CrewAI, or AutoGen**.
+
+### Agent Network
+
+- **Master Agent (Orchestrator):**  
+  Delegates tasks to the appropriate worker agent based on the conversational context.
+
+- **Worker Agents:**
+  - **Sales & Negotiation Agent:** Manages product inquiries and negotiates terms.
+  - **Verification & KYC Agent:** Handles document uploads, performs OCR, and verifies customer identity using computer vision.
+  - **Underwriting Agent:** Assesses risk and provides explainable credit decisions.
+  - **Sanction Letter Agent:** Generates and delivers official PDF sanction letters.
+  - **Financial Advisor Agent:** Offers personalized recommendations and explains complex financial concepts.
+  - **Sentiment & Personality Agent:** Analyzes customer emotion to guide the Adaptive AI Persona layer.
+  - **Fraud & Bias Agent:** Monitors for anomalies and ensures fair, unbiased decisions.
+  - **Life Event Predictor Agent:** Predicts customer needs (e.g., home loan after marriage) from conversational cues.
+  - **Financial Education Agent:** Provides post-loan financial planning tips and educational content.
+  - **Analytics Agent:** Mines conversation logs for patterns to feed into the self-learning loop.
+
+---
+
+## 📂 Project Structure
+ArthMithra/
+├── agents/ # Each agent's logic is a Python file here
+│ ├── sales_agent.py
+│ ├── kyc_agent.py
+│ ├── underwriting_agent.py
+│ └── ... (other agents)
+├── tools/ # Reusable functions (PDF generator, OCR, mock APIs)
+│ ├── pdf_generator.py
+│ ├── ocr_tool.py
+│ └── api_mocks.py
+├── data/ # Sample data, logs, and documents
+│ ├── sample_pan.png
+│ ├── sample_aadhar.jpg
+│ └── conversation_logs.json
+├── app.py # Main Streamlit application
+└── requirements.txt # Python package dependencies
 
