@@ -7,7 +7,7 @@ This project is not just about selling loans; it's about building lasting financ
 ---
 
 ## 🧠 Core Idea: A Holistic, Human-Centric AI Banking Assistant
-SmartLoan360X is an agentic AI system that combines financial intelligence, emotion modeling, and real-world awareness to handle sales, education, and customer well-being. It orchestrates multiple autonomous AI agents, each with a specialized skill set, to provide a seamless and deeply personalized customer experience.
+ArthMithra is an agentic AI system that combines financial intelligence, emotion modeling, and real-world awareness to handle sales, education, and customer well-being. It orchestrates multiple autonomous AI agents, each with a specialized skill set, to provide a seamless and deeply personalized customer experience.
 
 ---
 
