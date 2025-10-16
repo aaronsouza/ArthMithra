@@ -55,21 +55,4 @@ The system is built on a multi-agent architecture where a **Master Agent** orche
 
 ---
 
-## 📂 Project Structure
-ArthMithra/
-├── agents/ # Each agent's logic is a Python file here
-│ ├── sales_agent.py
-│ ├── kyc_agent.py
-│ ├── underwriting_agent.py
-│ └── ... (other agents)
-├── tools/ # Reusable functions (PDF generator, OCR, mock APIs)
-│ ├── pdf_generator.py
-│ ├── ocr_tool.py
-│ └── api_mocks.py
-├── data/ # Sample data, logs, and documents
-│ ├── sample_pan.png
-│ ├── sample_aadhar.jpg
-│ └── conversation_logs.json
-├── app.py # Main Streamlit application
-└── requirements.txt # Python package dependencies
 
